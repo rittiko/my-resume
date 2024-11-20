@@ -12,7 +12,7 @@ app.get("/", async (req, res) => {
   try {
     const response = await axios.get("https://rittiko.github.io/my.data.json/resumeData.json");
     const data = response.data; 
-    console.log(data);
+    // console.log(data);
 
     res.render("index.ejs", { data: data, year: year }); 
   } catch (error) {
