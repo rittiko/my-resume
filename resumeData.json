@@ -1,0 +1,57 @@
+{
+    "name": "Ritthikiat Piyawong",
+    "contact": {
+      "phone": "097-023-2997",
+      "address": "222 Moo 27, Mueang Khon Kaen District, Khon Kaen 40000",
+      "email": "ritthikiat.piyawong@kkumail.com"
+    },
+    "education": {
+      "university": "Khon Kaen University",
+      "program": "Bachelor of Engineering Program in Computer Engineering",
+      "years": "2022-NOW",
+      "gpx": "3.08"
+    },
+    "skills": [
+      "JavaScript",
+      "EJS",
+      "Node.JS",
+      "HTML",
+      "CSS",
+      "MySQL",
+      "React",
+      "Python"
+    ],
+    "aboutMe": "I am a third-year Computer Engineering student skilled in both Front-End and Back-End development. I've worked on developing a Line Chat Bot for our university library as part of an elective Web Development course. I'm great at collaborating with others and am always eager to learn, whether through teamwork or by teaching myself new skills. I’m also an excellent team player who can effectively support and follow when needed.",
+    "activitiesAndProjects": [
+      {
+        "title": "Staff at CESCA19 Camp",
+        "date": "3 May 2024",
+        "description": "I was assigned as a welfare staff member at the CESCA19 camp, which is a camp organized directly by the Faculty of Computer Engineering, Khon Kaen University, for students interested in computer engineering to participate, where my main responsibility was to assist the head of the welfare department in purchasing and preparing supplies for the camp participants each day."
+      },
+      {
+        "title": "Teaching Assistant for the IT Learning Program's Lifelong Learning",
+        "date": "21 December 2023",
+        "description": "I participated in a volunteer activity as a teaching assistant for the IT Learning Program's 'Lifelong Learning' series: Session 2, Episode 1, which covered using ChatGPT, Alisa ChatBot, and Bing as personal assistants for teachers, on December 21, 2023."
+      },
+      {
+        "title": "Line Chatbot Project",
+        "date": "September - October 2024",
+        "description": "I have worked on a project to create a Line chatbot that answers questions related to the library of Khon Kaen University using Dialogflow, Firebase, ngrok, and JavaScript. An AI was integrated to assist in answering questions that are not included in the defined intents in Dialogflow, using the Gemini."
+      }
+    ],
+    "softSkills": [
+      {
+        "title": "Followership",
+        "description": "I am a good follower with flexibility in my work and accepting opinions and suggestions from others"
+      },
+      {
+        "title": "Teamwork",
+        "description": "I am able to work effectively as part of a team and complete tasks as instructed."
+      },
+      {
+        "title": "Problem-solving",
+        "description": "I enjoy resolving issues that arise during work. If I can't solve a problem or it takes too long, I promptly consult with experts for assistance."
+      }
+    ]
+  }
+  

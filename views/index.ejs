@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+        integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <span>
+        <h1>resume</h1>
+    </span>
+    <div class="container">
+        <div class="left-side">
+            <div class="profile">
+                <div class="imgContainer">
+                    <img src="/images/profile.jpeg" alt="">
+                </div>
+                <h2>
+                    <%= data.name %>
+                </h2>
+            </div>
+            <div class="contact-info contact">
+                <h3 class="title-left">Contact</h3>
+                <ul class="contact-ul">
+                    <li class="contact-li">
+                        <span class="icon"><i class="fas fa-phone-alt"></i></span>
+                        <span class="text">
+                            <%= data.contact.phone %>
+                        </span>
+                    </li>
+                    <li class="contact-li">
+                        <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+                        <span class="text">
+                            <%= data.contact.address %>
+                        </span>
+                    </li>
+                    <li class="contact-li">
+                        <span class="icon"><i class="fas fa-envelope"></i></span>
+                        <span class="text">
+                            <%= data.contact.email %>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="contact-info education">
+                <h3 class="title-left">education</h3>
+                <h5>
+                    <%= data.education.university %>
+                </h5>
+                <span>
+                    <%= data.education.program %>
+                </span><br>
+                <span>
+                    <%= data.education.years %>
+                </span><br>
+                <span>
+                    <%= data.education.gpx %>
+                </span>
+            </div>
+            <div class="contact-info skill">
+                <h3 class="title-left">skill</h3>
+                <ul class="skill-ul">
+                    <% data.skills.forEach(function(skill) { %>
+                        <li class="skill-li">
+                            <%= skill %>
+                        </li>
+                        <% }); %>
+                </ul>
+
+
+            </div>
+
+        </div>
+        <div class="right-side">
+            <div class="contact-info aboutme">
+                <h3 class="title-right">aboutme</h3>
+                <p>
+                    <%= data.aboutMe %>
+                </p>
+            </div>
+            <div class="contact-info activi">
+                <h3 class="title-right">activities and project</h3>
+
+
+                <% data.activitiesAndProjects.forEach(function (activity){ %>
+                    <h4>
+                        <%= activity.title %>
+                    </h4>
+                    <h5>
+                        <%= activity.date %>
+                    </h5>
+                    <p>
+                        <%= activity.description %>
+                    </p>
+                    <% }); %>
+            </div>
+            <div class="contact-info soft-skill">
+                <h3 class="title-right">SOFT SKILL</h3>
+                <% data.softSkills.forEach(function (softskill) { %>
+                    <h4>
+                        <%= softskill.title %>
+                    </h4>
+                    <p>
+                        <%= softskill.description %>
+                    </p>
+                    <% }); %>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Copy Right <%= year %></p>
+    </footer>
+</body>
+
+</html>
